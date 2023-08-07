@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Webpage</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Hello, World!</h1>
+    <button id="changeButton">Change Text</button>
+
+    <script>
+        // JavaScript code
+        // Get references to the heading and button elements
+        const headingElement = document.getElementById('heading');
+        const changeButton = document.getElementById('changeButton');
+
+        // Function to change the text of the heading
+        function changeHeadingText() {
+            headingElement.textContent = 'Text Changed!';
+        }
+
+        // Add a click event listener to the button
+        changeButton.addEventListener('click', changeHeadingText);
+    </script>
+</body>
+
+</html>
